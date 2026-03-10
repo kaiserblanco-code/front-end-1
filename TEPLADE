@@ -47,8 +47,8 @@
 </head>
 <body>
     <header>
-        <divclass="menu">
-            <a class="linkMenu" href="https://ge.glob.com/">Home</a>
+        <div class="menu">
+            <a class="linkMenu" href="https://ge.globo.com/">Home</a>
         </div>
       
     </header>
@@ -60,4 +60,3 @@
     </footer>
 </body>
 </html>
-
