@@ -46,17 +46,28 @@
         function limpar() {
             document.getElementById("campo").value = "";
         }
+        function calcular() {
+            var campo = document.getElementById("campo");
+            try {
+                campo.value = eval(campo.value);
+            } catch (error) {
+                campo.value = "Erro";
+            }
+
+
+
+        }
     </script>
 </head>
 
 <body>
     <fieldset>
         <legend>CALCULADORA DO 2ºA</legend>
-        <input type="text" id="campo" class="campo"><br><br>
+        <input type="text" id="campo" onclick="adicionar('1')" class="campo"><br><br>
         <button onclick="adicionar('1')" class="botao">1</button>
         <button onclick="adicionar('2')" class="botao">2</button>
         <button onclick="adicionar('3')" class="botao">3</button>
-        <button onclick="adicionar('x')" class="botao2">x</button>
+        <button onclick="adicionar('.')" class="botao2">x</button>
         <button onclick="adicionar('^')" class="botao2">^</button>
         <br>
         <button onclick="adicionar('4')" class="botao">4</button>
@@ -71,24 +82,15 @@
         <button onclick="adicionar('+')" class="botao2">+</button>
         <button onclick="adicionar(')')" class="botao2">)</button>
         <br>
-        <button onclick="adicionar('*')" class="botao2">*</button>
+        <button onclick="adicionar('.')" class="botao2">.</button>
         <button onclick="adicionar('0')" class="botao">0</button>
-        <button onclick="adicionar('#')" class="botao2">#</button>
+        <button onclick="adicionar(',')" class="botao2">,</button>
         <button onclick="adicionar('-')" class="botao2">-</button>
         <button onclick="adicionar('%')" class="botao2">%</button>
         <br>
         <button onclick="limpar()" class="botao3">C</button>
-        <button onclick="adicionar('=')" class="botao4">=</button>
+        <button onclick="calcular()" class="botao4">=</button>
     </fieldset>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
