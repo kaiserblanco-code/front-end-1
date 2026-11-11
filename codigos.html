@@ -1,1 +1,235 @@
+import React from "react";
+import {StyleSheet, View, Text, TextInput, ScrollView} from "react-native"
 
+export default function Index(){
+  return <>
+      <ScrollView>
+      <View style={estilo.tela}>
+          <View style={estilo.linha}>DADOS PESSOAIS</View>
+          <View style={estilo.linha}>
+
+            <View style={estilo.linha11}>
+              <Text style={estilo.texto}>Nome Completo:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha12}>
+              <Text style={estilo.texto}>Sexo:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+          </View>
+
+          <View style={estilo.linha}>
+          
+            <View style={estilo.linha21}>
+              <Text style={estilo.texto}>Nascimento:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha22}>
+              <Text style={estilo.texto}>CPF:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha23}>
+              <Text style={estilo.texto}>RG:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha24}>
+              <Text style={estilo.texto}>Nacionalidade:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+          </View>
+          <View style={estilo.linha}>
+
+            <View style={estilo.linha31}>
+              <Text style={estilo.texto}>E-mail:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha32}>
+              <Text style={estilo.texto}>Celular:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha33}>
+              <Text style={estilo.texto}>Telefone:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+          </View>
+
+
+          <View style={estilo.linha}>DADOS DE ENDEREÇO</View>
+
+        <View style={estilo.linha}>
+          
+            <View style={estilo.linha21}>
+              <Text style={estilo.texto}>CEP:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha22}>
+              <Text style={estilo.texto}>Logadouro:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha23}>
+              <Text style={estilo.texto}>Número:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha24}>
+              <Text style={estilo.texto}>Complemento:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+          </View>
+          <View style={estilo.linha}>
+
+            <View style={estilo.linha31}>
+              <Text style={estilo.texto}>Bairro:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha32}>
+              <Text style={estilo.texto}>Cidade:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha33}>
+              <Text style={estilo.texto}>Estado:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+          </View>
+
+          <View style={estilo.linha}>DADOS ACADEMICOS</View>
+
+            <View style={estilo.linha}>
+
+            <View style={estilo.linha31}>
+              <Text style={estilo.texto}>Curso:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha32}>
+              <Text style={estilo.texto}>Matrícula:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha33}>
+              <Text style={estilo.texto}>Ano:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+          </View>
+
+          <View style={estilo.linha}>
+
+            <View style={estilo.linha31}>
+              <Text style={estilo.texto}>Modalidade:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha32}>
+              <Text style={estilo.texto}>Turno:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha33}>
+              <Text style={estilo.texto}>Escolaridade:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+          </View>
+
+          <View style={estilo.linha}>DADOS DOS RESPONSAVEIS</View>
+          
+            <View style={estilo.linha}>
+
+            <View style={estilo.linha11}>
+              <Text style={estilo.texto}>Nome do Responsavel:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+            <View style={estilo.linha12}>
+              <Text style={estilo.texto}>CPF do Responsável:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+          </View>
+
+          <View style={estilo.linha}>
+
+            <View style={estilo.linha11}>
+              <Text style={estilo.texto}>Observação:</Text>
+              <TextInput style={estilo.input}/>
+            </View>
+
+          </View>
+
+      </View>
+      </ScrollView>
+  </>
+}
+
+const estilo = StyleSheet.create({
+  tela:{
+    width:"100%",
+    height:"100%",
+    backgroundColor:"pink",
+  },
+  linha:{
+    width:"100%",
+    height:"20%",
+    backgroundColor:"pink",
+    flexDirection:"row",
+    display:"flex",
+  },
+  linha11:{
+    width:"68%",
+    height:"20%",
+  },
+  linha12:{
+    width:"28%",
+    height:"20%",
+    marginLeft:"1%",
+  },
+  linha21:{
+    width:"20%",
+    height:"20%",
+  },
+  linha22:{
+    width:"25%",
+    height:"20%",
+    marginLeft:"1%",
+  },
+  linha23:{
+    width:"25%",
+    height:"20%",
+    marginLeft:"1%",
+  },
+  linha24:{
+    width:"20%",
+    height:"20%",
+    marginLeft:"1%",
+  },
+  linha31:{
+    width:"50%",
+    height:"20%",
+  },
+  linha32:{
+    width:"22%",
+    height:"20%",
+    marginLeft:"1%",
+  },
+  linha33:{
+    width:"22%",
+    height:"20%",
+    marginLeft:"1%",
+  },
+  input:{
+    backgroundColor:"aliceblue",
+    borderBlockColor: "pink",
+    borderColor:"pink",
+    borderWidth:"1px",
+  },
+})
